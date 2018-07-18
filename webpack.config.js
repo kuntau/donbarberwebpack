@@ -14,8 +14,8 @@ const isProduction = () => process.env.NODE_ENV === 'production'
 
 module.exports = {
   entry: {
-    app: `./${_src}/main.js`,
-    vendor: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync', 'vuex-persistedstate', 'js-cookie', 'font-awesome/scss/font-awesome', 'buefy'],
+    app: `./${_src}/js/app.js`,
+    // app: `./${_src}/js/app.js`,
   },
   output: {
     path: path.resolve(__dirname, `./${_dist}`),
@@ -101,7 +101,7 @@ module.exports = {
     }),
     new htmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: 'src/index.html',
       favicon: `${_src}/${_static}/favicon.ico`,
       inject: true,
     }),

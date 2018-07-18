@@ -6,14 +6,15 @@
         nav.navbar.hero.is-primary
           .navbar-brand
             router-link.nav-item(:to="'/'")
-              span.logo vue-webpack-boilerplate
+              span.logo Don Barbershop
             .navbar-menu.is-active
               .navbar-end
                 .navbar-item.github
                   base-button(:classes="loginButtonClasses", @onClick="push")
                     b-icon(icon="github", size="is-small")
                     span {{ isLoggedIn ? 'log out' : 'log in' }}
-    router-view
+    // router-view
+    KUNTAU
     footer.footer
       .container
         .content.has-text-centered
@@ -66,10 +67,10 @@
 </script>
 
 <style lang="sass">
-  @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+  @import url(https://fonts.googleapis.com/css?family=Roboto);
 
   body, input
-    font-family: 'Poiret One'
+    font-family: 'Roboto'
     font-size: 24px
 
   .section
